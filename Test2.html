@@ -53,11 +53,14 @@
   border: .05rem solid #fff;
 }
 
+
+
   .container-fluid {
       padding: 60px 50px;
   }
   .bg-grey {
       background-color: #f6f6f6;
+	  background-image: 
   }
   .logo-small {
       color: #722f37;/*#f4511e;*/
@@ -80,13 +83,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #722f37; /* #f4511e;*/
   }
   .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #722f37; /*#f4511e;*/
   }
   .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #722f37;/*#f4511e;*/
   }
   .item h4 {
       font-size: 19px;
@@ -99,7 +102,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #722f37; /*#f4511e; */
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -107,13 +110,13 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
+      border: 1px solid #722f37; /*#f4511e;*/
       background-color: #fff !important;
-      color: #f4511e;
+      color: #722f37; /*#f4511e;*/
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #f4511e !important;
+      background-color: #722f37 /*#f4511e*/ !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -133,12 +136,12 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #f4511e;
+      background-color: #722f37; /*#f4511e;*/
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #722f37;/*#f4511e;*/
+      background-color: #fff/*#f4511e;*/
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -148,15 +151,21 @@
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: #722f37 !important;
   }
+  
+  .navbar .navbar-brand img{
+  margin: auto;
+  max-height: 40px;
+  }
+  
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #722f37/*#f4511e*/ !important;
-      background-color: #fff !important;
+      color: #fff /*#f4511e*/ !important;
+      background-color: #722f37; !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
-      color: #fff !important;
+      color: #722f37; !important;
   }
   footer .glyphicon {
       font-size: 20px;
@@ -207,6 +216,7 @@
         font-size: 150px;
     }
 
+	
   }
   </style>
 </head>
@@ -220,7 +230,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Xcellent Management Inc.</a>
+      <a class="navbar-brand" href="#myPage"><img src="another.png"/>Xcellent Management Inc.</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -234,8 +244,8 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Xcellent Management Inc.</h1> 
-  <p>We deliver excellent results  <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+  <h1>Xcellent Management Inc.  <img style="max-height: 100px;"src="another.png"/></h1> 
+  <p>Excellent Team, Excellent results  <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
 </p> 
   <!--<form>
     <div class="input-group">
@@ -250,10 +260,7 @@
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-  <div class="col-sm-8">
-  <img class="thumbnail" style="float: center"src="logohouse-1.png"/>
-  </div>
-    <div class="col-sm-8">
+      <div class="col-sm-8">
 	
       <h2>Welcome</h2><br>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
@@ -261,7 +268,10 @@
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-home logo"></span>
+	
+  <img class="thumbnail" style="max-height: 100px;"src="test1.png"/>
+  
+  <!--    <span class="glyphicon glyphicon-home logo"></span>-->
     </div>
   </div>
 </div>
@@ -269,7 +279,7 @@
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      <span class="glyphicon glyphicon-home logo slideanim"></span>
     </div>
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
